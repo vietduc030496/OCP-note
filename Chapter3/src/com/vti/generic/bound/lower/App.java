@@ -11,6 +11,9 @@ public class App {
 		List<Object> objects = new ArrayList<Object>(strings);
 		addSound(strings);
 		addSound(objects);
+		
+		System.out.println(strings); // [tweet, quack]
+		System.out.println(objects); // [tweet, quack]
 	}
 
 	public static void addSound(List<? super String> list) {

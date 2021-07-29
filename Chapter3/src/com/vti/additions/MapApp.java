@@ -25,6 +25,14 @@ public class MapApp {
 		System.out.println(favorites); // {Tom=Skyride, Jenny=Bus Tour}
 		System.out.println(jenny); // Bus Tour
 		System.out.println(tom); // Skyride
+		
+		
+		Map<String, Integer> map2 = new HashMap<String, Integer>();
+		map2.put("1", null);
+		BiFunction<Integer, Integer, Integer> mapper2 = (i1, i2) -> {System.out.println(i1); return i1 * i2;};
+		map2.merge("1", 2, mapper2);
+		
+		System.out.println(map2.get("1"));
 	}
 
 }

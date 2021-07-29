@@ -1,7 +1,7 @@
 package com.vti.generic;
 
 public class Crate<T> {
-
+	
 	private T contents;
 
 	public T emptyContents() {
