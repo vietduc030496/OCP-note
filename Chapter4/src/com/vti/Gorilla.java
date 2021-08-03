@@ -19,4 +19,8 @@ class GorillaFamily {
 	void play(Gorilla g) {
 		System.out.println(g.move());
 	}
+	
+	public static void main(String[] args) {
+		new GorillaFamily().everyonePlay(true);
+	}
 }
