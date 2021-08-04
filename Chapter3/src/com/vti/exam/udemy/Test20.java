@@ -8,7 +8,7 @@ import java.util.List;
  *
  * Question 20
  */
-public class Test6 {
+public class Test20 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

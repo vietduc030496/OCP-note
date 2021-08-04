@@ -5,7 +5,7 @@ package com.vti.exam.udemy;
  *
  * Question 11
  */
-public class Test4 {
+public class Test11 {
 	public static <T> void print1(A1<? extends Animal> obj) {
 //		Compiler error Line 22
 //		obj.set(new Dog()); // Line 22

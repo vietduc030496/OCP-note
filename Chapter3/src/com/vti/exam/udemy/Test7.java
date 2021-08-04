@@ -3,25 +3,17 @@ package com.vti.exam.udemy;
 /**
  * @author duc.nguyenviet
  *
- * Question 22
+ * Question 7
  */
 public class Test7 {
 
 	public static void main(String[] args) {
-		Operator<String> operator = (s1, s2) -> s1 + s2; 
-		System.out.println(operator);
-		
-		System.out.println((Operator<String>)(String s1, String s2) -> s1 + s2);
-
-		System.out.println(new Operator<String>() {
-			public String operation(String s1, String s2) {
-				return s1 + s2;
-			}
-		});
+		Printer2<String> printer = new Printer2<>();
+		System.out.println(printer);
 	}
 
 }
 
-interface Operator<T> {
-	public abstract T operation(T t1, T t2);
+class Printer2<T extends String> {
+
 }

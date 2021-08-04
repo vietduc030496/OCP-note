@@ -3,33 +3,22 @@ package com.vti.exam.udemy;
 /**
  * @author duc.nguyenviet
  *
- * Questions 5
+ * Questions 2
  */
 public class Test2 {
 
 	public static void main(String[] args) {
-		Generic<D> obj = new Generic();
+		Printer1<Integer> obj = new Printer1<>(100);
+		System.out.println(obj);
 	}
 
 }
 
-class A {
-}
+class Printer1<String> {
+	private String t;
 
-interface M {
-}
-
-interface N {
-}
-
-class B extends A {
-}
-
-class C extends A implements M {
-}
-
-class D extends A implements M, N {
-}
-
-class Generic<T extends A & M & N> {
+	Printer1(String t) {
+		this.t = t;
+	}
+	
 }
