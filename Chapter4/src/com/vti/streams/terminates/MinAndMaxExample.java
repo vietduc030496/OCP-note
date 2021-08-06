@@ -22,7 +22,6 @@ public class MinAndMaxExample {
 		Stream<String> stream3 = Stream.empty();
 		Optional<String> min3 = stream3.min(String::compareTo);
 		System.out.println(min3.isPresent()); // false for min never call when stream is empty
-		
 	}
 
 }
