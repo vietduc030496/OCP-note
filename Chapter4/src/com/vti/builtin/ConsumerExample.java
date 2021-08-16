@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
-public class ConsumerExample {
+public class ConsumerExample { 
 
 	public static void main(String[] args) {
 		Consumer<String> c1 = System.out::println;
